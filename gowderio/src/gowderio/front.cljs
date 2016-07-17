@@ -1,8 +1,8 @@
-(ns stdio.front
+(ns gowderio.front
   (:require [soda-ash.element :as s]
-            [stdio.shell :refer [shell loren footnote]]))
+            [gowderio.shell :refer [shell loren footnote]]))
 
-(def navload #(stdio.nav.navload %))
+(def navload #(gowderio.nav.navload %))
 
 (defn law-page []
   [shell "Lawyer"
@@ -61,7 +61,7 @@
      [:a {:href "https://www.recurse.com/blog/99-free-one-on-one-mentorship-for-new-programmers"} "RC Start"]
      ".)"]
     [:p " This website is built as a pure single-page Clojurescript 'app' with Reagent (a cljs wrapper for React) and Semantic UI. The code for this site is "
-     [:a {:href "https://github.com/paultopia/stdio"} "here"]
+     [:a {:href "https://github.com/paultopia/gowderio"} "here"]
      ", and while you're there, you can check out the rest of " [:a {:href "https://github.com/paultopia/"} "my Github."]]]])
 
 (defn media-list []

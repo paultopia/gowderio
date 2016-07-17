@@ -1,7 +1,7 @@
-(ns stdio.core
+(ns gowderio.core
   (:require
-   [stdio.nav :refer [load keynav track-scroll]]
-   [stdio.front :refer [home-page]]
+   [gowderio.nav :refer [load keynav track-scroll]]
+   [gowderio.front :refer [home-page]]
    [cljsjs.fastclick]))
 
 (js/FastClick.attach (.. js/document -body))

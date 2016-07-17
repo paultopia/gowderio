@@ -1,9 +1,9 @@
-(ns stdio.shell
+(ns gowderio.shell
   (:require [soda-ash.element :as s]
             [goog.events :refer [listen]]
             [reagent.core :refer [atom force-update-all]]))
 
-(def navbar #(stdio.nav.navbar))
+(def navbar #(gowderio.nav.navbar))
 ;; this is a dirty circular dependency trick. see https://github.com/shaunlebron/cljs-circular-dependency
 
 (defn loren [reps]
@@ -57,7 +57,7 @@
 (defn handle-footnote-key [key-event num page ratom]
   (let [keypress (.-keyCode key-event)]
     (cond
-      (and  (= (+ 48 num) keypress) (= page @stdio.nav.curpage))
+      (and  (= (+ 48 num) keypress) (= page @gowderio.nav.curpage))
       (reset! ratom true))))
 
 (def footnote-counter (atom 0))

@@ -1,10 +1,10 @@
-(ns stdio.nav
+(ns gowderio.nav
   (:require [soda-ash.element :as s]
           [reagent.core :as r :refer [render atom]]
-          [stdio.shell :refer [shell footnote-counter]]
+          [gowderio.shell :refer [shell footnote-counter]]
           [goog.events :refer [listen]]
           [clojure.string :refer [capitalize]]
-          [stdio.front :refer [home-page law-page research-page data-page comm-page innovation-page]]))
+          [gowderio.front :refer [home-page law-page research-page data-page comm-page innovation-page]]))
 
 (declare namemap)
 

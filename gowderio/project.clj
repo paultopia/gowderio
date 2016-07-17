@@ -1,14 +1,15 @@
-(defproject stdio "0.1.0-SNAPSHOT"
-  :description "standardized.io rebuild"
-  :url "http://standardize.io"
+(defproject gowderio "0.1.0-SNAPSHOT"
+  :description "just a personal page"
+  :url "http://gowder.io"
+
   :dependencies [[org.clojure/clojure "1.8.0" :scope "provided"]
-                 [org.clojure/clojurescript "1.9.92" :scope "provided"]
+                 [org.clojure/clojurescript "1.9.93" :scope "provided"]
                  [reagent "0.6.0-rc"]
                  [soda-ash "0.1.0-beta"]
                  [cljsjs/fastclick "1.0.6-0"]]
 
   :plugins [[lein-cljsbuild "1.1.3"]
-            [lein-figwheel "0.5.4-4"]]
+            [lein-figwheel "0.5.4-5"]]
 
   :min-lein-version "2.5.0"
 
@@ -27,7 +28,7 @@
   :cljsbuild {:builds {:app
                        {:source-paths ["src" "env/dev/cljs"]
                         :compiler
-                        {:main "stdio.dev"
+                        {:main "gowderio.dev"
                          :output-to "public/js/app.js"
                          :output-dir "public/js/out"
                          :asset-path   "js/out"
@@ -45,6 +46,6 @@
 
   :aliases {"release" ["do" "clean" ["cljsbuild" "once" "release"]]}
 
-  :profiles {:dev {:dependencies [[figwheel-sidecar "0.5.4-4"]
+  :profiles {:dev {:dependencies [[figwheel-sidecar "0.5.4-5"]
                                   [org.clojure/tools.nrepl "0.2.12"]
                                   [com.cemerick/piggieback "0.2.2-SNAPSHOT"]]}})

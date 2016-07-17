@@ -1,5 +1,5 @@
-(ns ^:figwheel-no-load stdio.dev
-  (:require [stdio.core :as core]
+(ns ^:figwheel-no-load gowderio.dev
+  (:require [gowderio.core :as core]
             [figwheel.client :as figwheel :include-macros true]))
 
 (enable-console-print!)
