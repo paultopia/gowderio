@@ -4,7 +4,6 @@
 
   :dependencies [[org.clojure/clojure "1.8.0" :scope "provided"]
                  [org.clojure/clojurescript "1.9.93" :scope "provided"]
-                 [reagent "0.6.0-rc"]
                  [soda-ash "0.1.0-beta"]
                  [cljsjs/fastclick "1.0.6-0"]]
 
